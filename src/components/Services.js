@@ -26,7 +26,7 @@ class Services extends React.Component {
       },
       {
         icon: <FaBeer />,
-        title: "strong beer",
+        title: "strongest beer",
         info:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
