@@ -4,13 +4,10 @@ import { RoomContext } from "../context";
 class FeaturedRooms extends React.Component {
   static contextType = RoomContext;
   render() {
-    const { greeting, name } = this.context;
+    const { featuredRooms } = this.context;
+    console.log(featuredRooms);
 
-    return (
-      <div>
-        {greeting} from FeaturedRooms {name}
-      </div>
-    );
+    return <div>Hello from FeaturedRooms</div>;
   }
 }
 
