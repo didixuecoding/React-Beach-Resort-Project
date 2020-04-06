@@ -5,6 +5,7 @@ import { RoomContext } from "../context";
 import defaultBcg from "../../public/images/room-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
+import StyledHero from "../components/StyledHero";
 
 class SingleRoom extends React.Component {
   state = { slug: this.props.match.params.slug, defaultBcg };
@@ -35,13 +36,13 @@ class SingleRoom extends React.Component {
     } = room;
 
     return (
-      <Hero hero="roomsHero">
+      <StyledHero image={images[0] || this.state.defaultBcg}>
         <Banner title={`${name} room`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
           </Link>
         </Banner>
-      </Hero>
+      </StyledHero>
     );
   }
 }
